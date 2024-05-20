@@ -1,6 +1,6 @@
 {
   "name": "lct2024",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "dev:spotlight": "spotlight-sidecar",
     "dev:next": "next dev",
