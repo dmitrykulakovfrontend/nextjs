@@ -1,5 +1,5 @@
 {
-  "name": "lct2024",
+  "name": "next-js-boilerplate",
   "version": "3.50.0",
   "scripts": {
     "dev:spotlight": "spotlight-sidecar",
@@ -76,6 +76,7 @@
     "@vitest/expect": "^1.6.0",
     "autoprefixer": "^10.4.19",
     "checkly": "^4.6.3",
+    "pino": "^8.15.2",
     "commitizen": "^4.3.0",
     "cross-env": "^7.0.3",
     "cssnano": "^7.0.1",
@@ -146,5 +147,6 @@
       "@semantic-release/git",
       "@semantic-release/github"
     ]
-  }
+  },
+  "author": "Ixartz (https://github.com/ixartz)"
 }
