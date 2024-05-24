@@ -4,6 +4,7 @@ import { guestbookSchema } from '@/models/Schema';
 
 import { DeleteGuestbookEntry } from './DeleteGuestbookEntry';
 import { EditableGuestbookEntry } from './EditableGuestbookEntry';
+import { Button } from './ui/button';
 
 const GuestbookList = async () => {
   const guestbook = await db.select().from(guestbookSchema).all();
@@ -15,7 +16,7 @@ const GuestbookList = async () => {
       {guestbook.map((elt) => (
         <div key={elt.id} className="mb-1 flex items-center gap-x-1">
           <DeleteGuestbookEntry id={elt.id} />
-
+          <Button>Haha</Button>
           <EditableGuestbookEntry
             id={elt.id}
             username={elt.username}
