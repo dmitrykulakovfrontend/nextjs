@@ -1,19 +1,17 @@
 import '@/styles/global.css';
 
 import type { Metadata } from 'next';
+import { Inter as FontSans } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 
+import { cn } from '@/lib/utils';
 import { AppConfig } from '@/utils/AppConfig';
 
-import { Inter as FontSans } from "next/font/google"
- 
-import { cn } from "@/lib/utils"
- 
 const fontSans = FontSans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-})
+  subsets: ['latin'],
+  variable: '--font-sans',
+});
 
 export const metadata: Metadata = {
   icons: [
@@ -52,10 +50,12 @@ export default function RootLayout(props: {
 
   return (
     <html lang={props.params.locale}>
-      <body className={cn(
-          "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable
-        )}>
+      <body
+        className={cn(
+          'min-h-screen bg-background font-sans antialiased',
+          fontSans.variable,
+        )}
+      >
         <NextIntlClientProvider
           locale={props.params.locale}
           messages={messages}
