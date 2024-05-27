@@ -5,7 +5,8 @@
       "guestbook_link": "Гостевая книга",
       "portfolio_link": "Портфолио",
       "sign_in_link": "Войти",
-      "sign_up_link": "Регистрация"
+      "sign_up_link": "Регистрация",
+      "ice_breaker_link":"Ледокол"
     },
     "BaseTemplate": {
       "description": "Стартовый код для вашего Nextjs Boilerplate с Tailwind CSS",
